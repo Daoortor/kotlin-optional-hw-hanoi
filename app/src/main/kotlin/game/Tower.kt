@@ -1,19 +1,18 @@
 package game
 
-import kotlin.collections.ArrayDeque
+class Tower(private val elements: MutableList<Int> = mutableListOf()) {
 
-class DecreasingStack<T : Comparable<T>>(elementsList: List<T> = listOf()) {
-    private val elements: ArrayDeque<T> = ArrayDeque()
-    init {
-        elementsList.forEach { push(it) }
-    }
-
-    fun push(newElement: T) = when {
-        elements.isEmpty() || elements.last() > newElement -> elements.addLast(newElement)
+    fun push(newElement: Int) = when {
+        elements.isEmpty() || elements.last() > newElement -> elements.add(newElement)
         else -> error("element is bigger than top of the stack")
     }
 
-    fun pop(): T = when {
+    fun top(): Int = when {
+        elements.isEmpty() -> error("stack is empty")
+        else -> elements.last()
+    }
+
+    fun pop(): Int = when {
         elements.isEmpty() -> error("stack is empty")
         else -> elements.removeLast()
     }
@@ -22,7 +21,7 @@ class DecreasingStack<T : Comparable<T>>(elementsList: List<T> = listOf()) {
 
     fun isEmpty(): Boolean = elements.isEmpty()
 
-    fun getElements(): ArrayDeque<T> = elements
+    fun getElements(): MutableList<Int> = elements
 
     override fun equals(other: Any?) = hashCode() == other.hashCode()
 
