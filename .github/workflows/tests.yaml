@@ -1,0 +1,14 @@
+name: tests
+on: push
+jobs:
+  tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          exec 5>&1
+          OUT=$(echo "$(./gradlew test)" | tee >(cat - >&5))
+          if [ "$(echo "$OUT" | grep "BUILD SUCCESSFUL")" = "" ]
+          then
+            exit 1
+          fi
