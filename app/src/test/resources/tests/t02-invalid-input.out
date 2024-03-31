@@ -1,0 +1,60 @@
+Enter tower size: Tower size should be an integer >= 2. Enter tower size: Tower size should be an integer >= 2. Enter tower size: Tower size should be an integer >= 2. Enter tower size: Tower size should be an integer >= 2. Enter tower size: Tower size should be an integer >= 2. Enter tower size: 
+ █   |   | 
+███  |   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: Input should contain two numbers: the indices of the source and destination stack.
+
+ █   |   | 
+███  |   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: Source stack #0 invalid
+
+ █   |   | 
+███  |   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: Destination stack #4 invalid
+
+ █   |   | 
+███  |   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: 
+ |   |   | 
+███  █   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: Input should contain two numbers: the indices of the source and destination stack.
+
+ |   |   | 
+███  █   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: Input should contain two numbers: the indices of the source and destination stack.
+
+ |   |   | 
+███  █   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: 
+ |   |   | 
+ |   █  ███
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: 
+ |   |   █ 
+ |   |  ███
+___ ___ ___
+[1] [2] [3]
+
+You finished in 3 moves.

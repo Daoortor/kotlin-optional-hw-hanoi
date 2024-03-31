@@ -1,0 +1,25 @@
+Enter tower size: 
+ █   |   | 
+███  |   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: 
+ |   |   | 
+███  █   | 
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: 
+ |   |   | 
+ |   █  ███
+___ ___ ___
+[1] [2] [3]
+
+Enter source and destination stacks: 
+ |   |   █ 
+ |   |  ███
+___ ___ ___
+[1] [2] [3]
+
+You finished in 3 moves.
